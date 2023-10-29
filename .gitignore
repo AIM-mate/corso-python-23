@@ -241,3 +241,25 @@ pyrightconfig.json
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+# latex files
+*.aux
+*.log
+*.synctex.gz
+*.out
+*.toc
+*.bbl
+*.bib
+*.blg
+*.bcf
+*.run.xml
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.nav
+*.snm
+*.dvi
+
+# ignore all images in the latex file
+lezione-1/latex/assets-png/
+lezione-1/latex/assets/
