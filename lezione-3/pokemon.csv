@@ -1,0 +1,5 @@
+name,pokemon_type,hp,attack,defense
+Bulbasaur,Grass,45,49,49
+Charmander,Fire,39,52,43
+Squirtle,Water,44,48,65
+Charizard,Fire,78,84,78
