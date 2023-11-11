@@ -263,3 +263,4 @@ pyrightconfig.json
 # ignore all images in the latex file
 lezione-1/latex/assets-png/
 lezione-1/latex/assets/
+.python-version
