@@ -1,7 +1,7 @@
 import csv
 
 class Pokemon:
-    _all_pokemons = []
+    __all_pokemons = []
 
     def __init__(self, name: str, pokemon_type: str, hp: int, base_attack_strength: int):
         self.__name = name
@@ -9,7 +9,7 @@ class Pokemon:
         self.__pokemon_type = pokemon_type
         self.__base_attack_strength = base_attack_strength
 
-        Pokemon._all_pokemons.append(self)
+        Pokemon.__all_pokemons.append(self)
 
     @property
     def name(self):
@@ -50,11 +50,11 @@ class Pokemon:
                 self.die()
     
     def die(self):
-        Pokemon._all_pokemons.remove(self)
+        Pokemon.__all_pokemons.remove(self)
 
     @classmethod
     def get_all(cls):
-        return cls._all_pokemons
+        return cls.__all_pokemons
 
     def __repr__(self):
         return f"{self.__class__.__name__}(name='{self.name}', hp={self.hp}, attack={self.base_attack_strength})"
