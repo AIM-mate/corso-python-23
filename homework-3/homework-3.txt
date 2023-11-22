@@ -1,0 +1,18 @@
+Oh no! Sei stato appena assunto come aiuto informatico alla scuola di magia e stregoneria di Hogwarts, ma il primo giorno di lavoro sta per prendere una brutta piega.
+
+Ti ha appena contattato il preside, Albus Silente, dopo che nella scorsa nottata i gemelli Weasley hanno distrutto il software di gestione di studenti e le clessidre che tengono conto dei punteggi per la Coppa delle Case!
+
+Nessun timore però, il preside ha già in mente un piano per ricostruire il software e migliorarlo con nuove funzioni!
+
+Il programma dovrà essere in grado di gestire gli studenti, ciascuno con le seguenti informazioni:
+
+- Nome
+- Cognome
+- Casa di appartenenza
+- Punti guadagnati/persi per la casa
+- Voto finale conseguito ai G.U.F.O. (tra NC - non conseguito, E - eccezionale, OOP - Oltre ogni previsione, S - Scadente, D - Desolante, T - Troll)
+
+Inoltre, deve essere possibile inserire nuovi studenti (con voto default NC se non specificato), aggiornare il voto, aggiungere punti allo studente (e quindi alla casa) e vedere il totale dei punti per casa per assegnare la Coppa delle Case! Visto che il Professor Piton teme che gli studenti possano manomettere il sistema per assegnarsi i punti e cambiarsi i voti, è imperativo che queste due informazioni vengano protette e possano essere modificate solo da metodi (a cui sarà concessa l'autorizzazione solo ai professori).
+
+
+Ancor più sfortunatamente, il capo informatico di Hogwarts, Daniel Ardanew, è attualmente in ferie! Fortunatamente, sei riuscito a trovare alcuni appunti sul sistema che pensava di costruire, che puoi decidere di seguire o meno.
