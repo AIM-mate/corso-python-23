@@ -21,7 +21,7 @@ class Casa():
 
     """
 
-    __case_Hogwats = []
+    __case_Hogwarts = []
     __case_possibili = ["Grifondoro", "Serpeverde", "Tassorosso", "Corvonero"]
 
     def __init__(self, nome : str, punti=0, studenti=[]) -> None:
@@ -32,7 +32,7 @@ class Casa():
         self.__punti = punti
         self.__studenti = studenti
 
-        Casa.__case_Hogwats.append(self)
+        Casa.__case_Hogwarts.append(self)
 
     def __str__(self) -> str:
         return f"Questa è la casa {self.__nome}"
@@ -59,16 +59,16 @@ class Casa():
 
     @classmethod
     def get_all_case(cls):
-        return cls.__case_Hogwats
+        return cls.__case_Hogwarts
 
     @classmethod
     def casa_vincitrice(cls):
 
-        if len(cls.__case_Hogwats) == 0:
+        if len(cls.__case_Hogwarts) == 0:
             return "Non ci sono case di Hogwarts"
 
-        casa_vincitrice = cls.__case_Hogwats[0]
-        for casa in cls.__case_Hogwats:
+        casa_vincitrice = cls.__case_Hogwarts[0]
+        for casa in cls.__case_Hogwarts:
             if casa.calcola_punti() > casa_vincitrice.calcola_punti():
                 casa_vincitrice = casa
         return casa_vincitrice
