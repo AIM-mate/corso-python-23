@@ -10,9 +10,24 @@ Il programma dovrà essere in grado di gestire gli studenti, ciascuno con le seg
 - Cognome
 - Casa di appartenenza
 - Punti guadagnati/persi per la casa
+- Numero di lezioni frequentate
 - Voto finale conseguito ai G.U.F.O. (tra NC - non conseguito, E - eccezionale, OOP - Oltre ogni previsione, S - Scadente, D - Desolante, T - Troll)
 
-Inoltre, deve essere possibile inserire nuovi studenti (con voto default NC se non specificato), aggiornare il voto, aggiungere punti allo studente (e quindi alla casa) e vedere il totale dei punti per casa per assegnare la Coppa delle Case! Visto che il Professor Piton teme che gli studenti possano manomettere il sistema per assegnarsi i punti e cambiarsi i voti, è imperativo che queste due informazioni vengano protette e possano essere modificate solo da metodi (a cui sarà concessa l'autorizzazione solo ai professori).
+Deve essere possibile inserire nuovi studenti (con voto default NC se non specificato). 
+Ricordiamo che ogni studente è inanzitutto un Mago, in futuro potrebbe essere necessario includere anche i professori nel software di gestione.
+Inoltre ogni studente deve essere in grado di 
+- frequentare lezioni (e quindi aggiornare il numero di lezioni frequentate e guadagnare 20 punti per la casa)
+- giocare a Quidditch (e guadagnare 5 punti per la casa)
+
+Quando sarà deciso dal preside, il giorno dei G.U.F.O., a ogni studente verrà assegnato il voto ai gufo in base alle lezioni che hanno seguito
+Deve essere possibile visualizzare la lista degli studenti
 
 
-Ancor più sfortunatamente, il capo informatico di Hogwarts, Daniel Ardanew, è attualmente in ferie! Fortunatamente, sei riuscito a trovare alcuni appunti sul sistema che pensava di costruire, che puoi decidere di seguire o meno.
+Il preside ha inoltre chiesto che sia possibile visualizzare anche le infromazioni relative alle case di appartenenza, ovvero:
+- nome della casa
+- punteggio attuale
+- lista degli studenti appartenenti alla casa
+- Casa vincente della Coppa delle Case (ovvero quella con il punteggio più alto)
+
+Ancor più sfortunatamente, il capo informatico di Hogwarts, Daniel Ardanew, è attualmente in ferie! 
+Fortunatamente, sei riuscito a trovare alcuni appunti sul sistema che pensava di costruire, che puoi decidere di seguire o meno.

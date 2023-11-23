@@ -21,26 +21,26 @@ class Mago():
     __possibili_patronus = ["Cervo", "Volpe", "Lupo", "Gatto", "Cane", "Cavallo", "Fenice", "Lepre", "Orso", "Tasso", "Tigre", "Topo", "Unicorno", "Leone", "Serpente", "Tartaruga", "Aquila"]
     __maghi_Hogwarts = []
 
-    def __init__(self, name : str, surname : str) -> None:
-        self.__name = name
-        self.__surname = surname
-        self.__patronus = Mago.__possibili_patronus[hash(name) % len(Mago.__possibili_patronus)]
+    def __init__(self, nome : str, cognome : str) -> None:
+        self.__nome = nome
+        self.__cognome = cognome
+        self.__patronus = Mago.__possibili_patronus[hash(nome) % len(Mago.__possibili_patronus)]
 
         Mago.__maghi_Hogwarts.append(self)
 
     def __repr__(self) -> str:
-        return f"Mago(name = '{self.__name}', surname = '{self.__surname}')"
+        return f"Mago(nome = '{self.__nome}', cognome = '{self.__cognome}')"
     
     def __str__(self) -> str:
-        return f"Mago {self.__name} {self.__surname} with patronus {self.__patronus}"
+        return f"Mago {self.__nome} {self.__cognome} che ha come patronus {self.__patronus}"
     
     @property
-    def name(self):
-        return self.__name
+    def nome(self):
+        return self.__nome
     
     @property
-    def surname(self):
-        return self.__surname
+    def cognome(self):
+        return self.__cognome
     
     @property
     def patronus(self):

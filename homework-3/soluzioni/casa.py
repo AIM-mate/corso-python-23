@@ -22,26 +22,28 @@ class Casa():
     """
 
     __case_Hogwats = []
+    __case_possibili = ["Grifondoro", "Serpeverde", "Tassorosso", "Corvonero"]
 
-    case_possibili = ["Grifondoro", "Serpeverde", "Tassorosso", "Corvonero"]
-
-    def __init__(self, nome : str, punti=0, studenti=[], professori=[]) -> None:
+    def __init__(self, nome : str, punti=0, studenti=[]) -> None:
         
-        assert nome in Casa.case_possibili, f"La casa {nome} non è una casa di Hogwarts"
+        assert nome in Casa.__case_possibili, f"La casa {nome} non è una casa di Hogwarts"
 
         self.__nome = nome
         self.__punti = punti
         self.__studenti = studenti
-        self.__professori = professori
 
         Casa.__case_Hogwats.append(self)
 
     def __str__(self) -> str:
-        return f"Casa {self.__nome} con {self.__punti} punti"
+        return f"Questa è la casa {self.__nome}"
     
     def __repr__(self) -> str:
-        return f"Casa(nome = '{self.__nome}', punti = {self.__punti}, studenti = {self.__studenti}, professori = {self.__professori})"
+        return f"Casa(nome = '{self.__nome}', punti = {self.__punti}, studenti = {self.__studenti})"
     
+    @property
+    def nome(self):
+        return self.__nome
+
     def aggiungi_studente(self, studente):
         self.__studenti.append(studente)
 
@@ -54,10 +56,6 @@ class Casa():
     def elenca_studenti(self):
         for studente in self.__studenti:
             print(studente)
-
-    def elenca_professori(self):
-        for professore in self.__professori:
-            print(professore)
 
     @classmethod
     def get_all_case(cls):
