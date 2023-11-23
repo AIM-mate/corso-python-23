@@ -31,12 +31,11 @@ class Studente(Mago):
     I class method da implementare sono:
     - get_all_studenti
     - giorno_dei_gufo        (assegna a tutti voto il ai gufo in base al numero di lezioni seguite)
-            se le lezioni sono 0 il voto è NC
-            se le lezioni sono 1 il voto è T
-            se le lezioni sono 2 il voto è D
-            se le lezioni sono 3 il voto è S
-            se le lezioni sono 4 il voto è OOP
-            se le lezioni sono 5 il voto è E
+            se le lezioni sono 0 il voto è T
+            se le lezioni sono 1 il voto è D
+            se le lezioni sono 2 il voto è S
+            se le lezioni sono 3 il voto è OOP
+            se le lezioni sono 4 il voto è E
 
     """
 
@@ -47,7 +46,7 @@ class Studente(Mago):
 
     def __init__(self, nome : str, cognome : str, casa : str, punti : int, lezioni :int = 0, gufo : str = "NC") -> None:
         
-        assert casa in Studente.__possibili_case, f"La casa {casa} non è una casa di Hogwarts"
+        assert casa in Studente.__possibili_case, f"Non puoi assegnare {nome} {cognome} alla casa {casa} perché non è una casa di Hogwarts"
         assert gufo in Studente.__voti_possibili_gufo, f"Il voto {gufo} non è un voto valido per i gufo"
         
         super().__init__(nome, cognome)

@@ -6,7 +6,7 @@ class Casa():
     Gli attributi principali che la caratterizzano sono:
     - nome della casa
     - punti della casa
-    - studenti della casa
+    - studenti della casa               (default = None)[!]
 
     I metodi principali sono:
     - aggiungi_studente
@@ -24,7 +24,7 @@ class Casa():
     __case_Hogwats = []
     __case_possibili = ["Grifondoro", "Serpeverde", "Tassorosso", "Corvonero"]
 
-    def __init__(self, nome : str, punti=0, studenti=[]) -> None:
+    def __init__(self, nome : str, punti=0, studenti=None) -> None:
         
         assert nome in Casa.__case_possibili, f"La casa {nome} non è una casa di Hogwarts"
 
@@ -45,7 +45,10 @@ class Casa():
         return self.__nome
 
     def aggiungi_studente(self, studente):
-        self.__studenti.append(studente)
+        if self.__studenti is None:
+            self.__studenti = []
+        self.__studenti.append(studente)    
+
 
     def calcola_punti(self):
         self.__punti = 0
